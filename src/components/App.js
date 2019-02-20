@@ -9,7 +9,9 @@ class App extends React.Component {
     state = {videos: [], selectedVideo: null };
 
     componentDidMount() {
-        this.handelTermSubmit('trending');
+        const values = ['trendings', 'football', 'children stories', 'technology', 'music', 'funny videos'];
+        var value = values[Math.floor(Math.random()*values.length)];
+        this.handelTermSubmit(value);
     }
 
 
